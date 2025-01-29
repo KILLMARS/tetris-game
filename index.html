@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-area">
+            <div class="info-panel">
+                <div id="score" class="info">Score: 0</div>
+                <div id="level" class="info">Level: 1</div>
+                <div id="lines-cleared" class="info">Lines Cleared: 0</div>
+                <div class="next-piece">
+                    <p>Next Piece:</p>
+                    <canvas id="next-piece-canvas"></canvas>
+                </div>
+            </div>
+            <div class="canvas-container">
+                <canvas id="board"></canvas>
+            </div>
+            <div class="controls">
+                <p>Controls:</p>
+                <ul>
+                    <li>Left Arrow: Move Left</li>
+                    <li>Right Arrow: Move Right</li>
+                    <li>Down Arrow: Move Down</li>
+                    <li>Up Arrow: Rotate</li>
+                    <li>Space: Hard Drop</li>
+                    <li>Esc: Restart</li>
+                    <li>P: Pause/Unpause</li>
+                </ul>
+            </div>
+            <script src="tetris2.js"></script>
+        </div>
+    </div>
+</body>
+</html>
