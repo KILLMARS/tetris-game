@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <audio src="song.flac" id="background-music" loop></audio>
     <div class="game-container">
         <div class="game-area">
             <div class="info-panel">
@@ -31,6 +32,9 @@
                     <li>Space: Hard Drop</li>
                     <li>Esc: Restart</li>
                     <li>P: Pause/Unpause</li>
+                    <button id="mute-button">
+                        <img id="mute-icon" src="mute.png" alt="">
+                    </button>
                 </ul>
             </div>
             <script src="tetris2.js"></script>

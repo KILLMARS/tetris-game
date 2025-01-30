@@ -377,6 +377,28 @@ function togglePause(){
     }
 }
 
+const backgroundMusic = document.getElementById('background-music');
+const muteButton = document.getElementById('mute-button');
+const muteIcon = document.getElementById('mute-icon');
+
+let isMuted = false;
+
+muteButton.addEventListener('click', () => {
+    isMuted = !isMuted;
+    backgroundMusic.muted = isMuted;
+
+    if(isMuted){
+        muteIcon.src = 'mute.png';
+    } else {
+        muteIcon.src = 'unmute.png';
+    }
+});
+
+window.addEventListener('load', () => {
+    backgroundMusic.play();
+});
+
+
 function update(time = 0){
     if(isPaused){
         ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
